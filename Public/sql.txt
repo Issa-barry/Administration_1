@@ -1,0 +1,1 @@
+INSERT INTO `galerie`.`users` (`id`, `nom`, `email`, `mdp`, `dateuser`) VALUES (NULL, 'TALL Fatoumata', 'bayby@gmail.fr', '0000', NOW()), (NULL, 'DIALLO Amadou', 'badjar@orange.fr', '0000', NOW());

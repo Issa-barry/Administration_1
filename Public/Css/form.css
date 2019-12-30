@@ -1,0 +1,178 @@
+
+/*-------------------------------------------------------------------------
+                                    FORMULAIRE
+--------------------------------------------------------------------------*/
+.form_content
+{ 
+    background: rgb(2,0,36);
+    width: 350px;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+}
+.form_content .titre
+{
+    color: white;
+    margin-bottom: 10px;
+    margin: auto;
+    font-size: 0.5rem;
+}
+.form_content a,p
+{
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+.form_content a:hover
+{
+    color: rgb(206, 203, 203);
+}
+
+.form_content input,input[type='submit']
+{
+    width: 95%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    
+}
+ 
+.form_content input[type='submit']
+{
+    background: rgb(18, 177, 240);
+      color: white;
+     font-weight: bold;
+     cursor: pointer;
+      
+}
+
+.form_content input[type='submit']:hover
+{
+    background: rgb(39, 172, 224);
+      color: rgb(241, 239, 239);
+}
+
+.form_content .errors, .succes
+{
+    width: 90%;
+    height: 30px;
+     
+}
+
+.form_content .errors, .succes p
+{
+    color: red;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: -15px;
+}
+
+.form_content .succes p
+{
+    color: rgb(22, 255, 158);
+}
+
+/*....................... Aide .....................*/
+.form_content .aide
+{
+     width: 100%;
+     margin-top: 25px;
+     text-align: justify;
+}
+ 
+.form_content .aide p,a
+{
+   color: white; 
+}
+ 
+/*-------------------------------------------------------------------------
+                                    RESPONSIVE
+--------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1080px)  {
+    
+        .form_content
+        { 
+           
+            width: 300px;
+        }
+
+        .form_content a,p
+        {
+            font-size: 0.7rem;
+            margin-left: 5px;
+        }
+     
+        .form_content .titre
+        {
+            font-size: 0.5rem;
+        }
+
+        .form_content input
+        {
+            height: 23px;
+            font-size: 13px;
+        }
+        
+        .form_content input[type='submit']
+        {
+
+            font-weight: 500;
+        }
+
+
+}
+
+
+
+@media screen and (max-width: 750px)  {  
+    .form_content
+        { 
+            width: 300px;
+            left: 30%;
+        }
+
+}
+
+/*..................POUR LES MOBILES ................................................*/
+@media screen and (max-width: 500px)  {  
+    .form_content
+    { 
+        width: 100%;
+        border-radius:5px;
+        left: 0%;
+    }
+
+
+          .form_content .titre
+            {
+                margin: auto;
+                font-size: 0.4rem;
+            }
+            .form_content a,p
+            {
+                font-size: 0.7rem;
+                margin-left: 5px;
+            }
+    
+
+            .form_content input,input[type='submit']
+            {
+                width: 98%;
+                height: 27px;
+                border-radius: 5px;
+                font-size: 12px;
+            }
+            
+             
+
+}
